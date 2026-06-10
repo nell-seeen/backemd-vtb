@@ -20,6 +20,11 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+    - name: Generate Gradle Wrapper yang Hilang
+      run: |
+        cd MusicStream
+        gradle wrapper
+
     - name: Masuk ke folder proyek dan beri izin
       run: |
         cd MusicStream
